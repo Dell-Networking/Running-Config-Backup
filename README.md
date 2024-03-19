@@ -23,7 +23,7 @@ For smaller networks, some customers require the ability to create a history of 
 
 ## 📋 Requirements
 
-Dependency:  Paramiko
+Dependency:  [Paramiko](https://www.paramiko.org/installing.html)
 
 1. Download this script and copy it to an appropriate directory.  By default this script will simply save the configurations in the same directory that the script is located in.
 2. In the directory where you have copied the file, execute this command: ```chmod +x sonic_config_backup.py```
