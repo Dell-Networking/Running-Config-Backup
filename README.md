@@ -29,8 +29,10 @@ Dependency:  [Paramiko](https://www.paramiko.org/installing.html)
 2. In the directory where you have copied the file, execute this command: ```chmod +x sonic_config_backup.py```
 3. Open crontab for editing with ```crontab -e```
    1. Add an entry to crontab in this manner: ```0 6 * * * /path/to/python3 /path/to/sonic_config_backup.py```
-   2. The "0" in this line specifies the minute.  The "6" specifies the hour.  The "* * *" represents the day of the month, the month of the year, and the day of the week respectively.  For more information see: [Understanding Crontab in Linux with Examples](https://linuxhandbook.com/crontab/)
-   3. You can find the path for python3 with the command ```which python3```
+      1. The "0" in this line specifies the minute.
+      2. The "6" specifies the hour.
+      3. The "* * *" represents the day of the month, the month of the year, and the day of the week respectively.  For more information see: [Understanding Crontab in Linux with Examples](https://linuxhandbook.com/crontab/)
+   2. You can find the path for python3 with the command ```which python3```
 
 As of this writing it has been tested on Ubuntu 20 and Python3. Additional exception handling and logging may be required for your use-case.
 ## 👏 How to Contribute
