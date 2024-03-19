@@ -18,7 +18,7 @@ Built and maintained by [Ben Goldstone](https://github.com/benjamingoldstone/) a
 
 ## 🚀 Description and Objective
 
-For smaller networks, some customers require the ability to create a history of configurations over time for their network devices.  They do not require the ability to automatically restore these configurations.  They simply would like to manually inspect configurations of devices over time.  This means that the configuration should be readable in a syntax familiar to them.  This Python script collects the output of ```show running-configuration | no-more``` and can be scheduled using crontab in linux.  As of this writing it has been tested on Ubuntu 20 and Python3.
+For smaller networks, some customers require the ability to create a history of configurations over time for their network devices.  They do not require the ability to automatically restore these configurations.  They simply would like to manually inspect configurations of devices over time.  This means that the configuration should be readable in a syntax familiar to them.  This Python script collects the output of ```show running-configuration | no-more``` from Dell Enterprise SONiC switches and can be scheduled using crontab in linux.  As of this writing it has been tested on Ubuntu 20 and Python3.
 
 
 ## 📋 Requirements
