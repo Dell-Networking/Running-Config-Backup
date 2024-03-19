@@ -9,10 +9,6 @@ Built and maintained by [Ben Goldstone](https://github.com/benjamingoldstone/) a
 
 ------------------
 
-This is the template repo for Dell Enterprise SONiC Proof-of-Concept repos. Adopt this repo as you see fit to meet your needs as you build out a reference PoC repo.
-
-The formatting here should be basically maintained, with the source code in the src folder and an appropriate LICENCE and CONTRIBUTING guide available inline in the README or as separate files within the repo.
-
 ## Contents
 
 - [Description and Objective](#-description-and-objective)
@@ -22,13 +18,19 @@ The formatting here should be basically maintained, with the source code in the 
 
 ## 🚀 Description and Objective
 
-Use this space to provide clarity around what the objective of the PoC is and what the end result of successfully running through the exercise should look like.
+For smaller networks, some customers require the ability to create a history of configurations over time for their network devices.  They do not require the ability to automatically restore these configurations.  They simply would like to manually inspect configurations of devices over time.  This means that the configuration should be readable in a syntax familiar to them.  This Python script collections the output of ```show running-configuration | no-more``` and can be scheduled using crontab in some flavor of Unix.  As of this writing it has been tested on Ubuntu 20 and Python3.
 
 
 ## 📋 Requirements
 
-Be sure to list requirements for building and utilizing the example PoC code here. This can include details such as languages / libraries / tools that must be used as well as what platforms the code has been validated to run on (Linux, MacOS, Windows, etc.) Additional details may be added in the README under the src folder.
+Dependency:  Paramiko
 
+1. Download this script and copy it to an appropriate directory.  By default this script will simply save the configurations in the same directory that the script is located in.
+2. In the directory where you have copied the file, execute this command: ```chmod +x sonic_config_backup.py```
+3. Open crontab for editing with ```crontab -e```
+   1. Add an entry to crontab in this manner: ```0 6 * * * /path/to/python3 /path/to/sonic_config_backup.py```
+   2. The "0" in this line specifies the minute.  The "6" specifies the hour.  The "* * *" represents the day of the month, the month of the year, and the day of the week respectively.
+   3. You can find the path for python3 with the command ```which python3```
 
 ## 👏 How to Contribute
 
