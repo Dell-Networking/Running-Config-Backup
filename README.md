@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Dell-Networking/PoC-SONiC-template/blob/main/LICENSE.md)
 [![GitHub issues](https://img.shields.io/github/issues/Dell-Networking/PoC-SONiC-template)](https://github.com/Dell-Networking/PoC-SONiC-template/issues)
 
-Built and maintained by [Serhat Kahraman](https://github.com/serhatka)) and [Contributors](https://github.com/Dell-Networking/PoC-SONiC-template/graphs/contributors)
+Built and maintained by [Serhat Kahraman](https://github.com/serhatka) and [Contributors](https://github.com/Dell-Networking/PoC-SONiC-template/graphs/contributors)
 
 ------------------
 
